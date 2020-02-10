@@ -5,18 +5,34 @@ $(document).ready(function() {
         $("#bleach-buttons").empty();
         for (i = 0; i <characters.length; i++){
             $("#bleach-buttons").append ("<button class='btn btn-success' data-character=" + characters[i] + "'>" + characters[i] + "</button>");
+            $("#bleach-input").empty()
+            $("#add-character").on("click", function(){
+            var input = $("#bleach-input").val().trim();
+            event.preventDefault();
+            form.reset();
+            characters.push(input);
+            // characters[i++];
+            console.log(characters);               
+            startButtons();
+            $('#bleach-input').val("");
+    
+            }
+            );
         }
     }
-    // function AddCharacter()
-    // $("#add-character").on("click", function(){
+    // $("#bleach-input").empty()
+    //  $("#add-character").on("click", function(){
     // var input = $("#bleach-input").val().trim();
+    // event.preventDefault();
     // form.reset();
-    // characters.push(input);               
+    // characters.push(input);
+    // console.log(characters);               
     // startButtons();
-    // return false;
+    // $('#bleach-input').val("");
+    
     // });
 
-startButtons();
+ startButtons();
 
  $("button").on("click", function(){
     var character = $(this).attr("data-character");
