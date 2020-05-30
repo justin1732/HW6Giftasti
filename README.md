@@ -1,7 +1,7 @@
 # Gifing the Giftastic
 ## Using Bleach Characters and Themes
 
-This was the fifth individual project for the University of Denver FullStack Coding Bootcamp.
+This was the sixth individual project for the University of Denver FullStack Coding Bootcamp.
 
 This app plays around with displaying and showing GIF images through GIPHY around a topic or idea. It then returns those objects onto a webpage.
 
